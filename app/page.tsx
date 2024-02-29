@@ -1,12 +1,9 @@
-import Image from "next/image";
+import HomePage from "./components/HomePage";
 
 export default function Home() {
   return (
-    // <div className="max-w-2xl">
-      <div className="flex flex-col items-center justify-center pt-3 gap-y-3">
-        <h1>Hello World!</h1>
-        <p>This is a personal resume about myself. I am Nickolas Piraino, an aspiring software developer. Focusing on web development and database management.</p>
-      </div>
-    // </div>
+    <main>
+      <HomePage/>
+    </main>
   );
 }
