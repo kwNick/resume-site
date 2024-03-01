@@ -1,15 +1,22 @@
+'use client';
 import Link from "next/link";
 import NavLogo from "./NavLogo";
 import { navList } from "../constants";
 import NavListItem from "./NavListItem";
-export default function NavBar(){
+// import { useState } from "react";
+
+interface Props{
+    setContent: any;
+}
+
+export default function NavBar({setContent}: Props){
     return (
             <div className="h-24 px-10 flex items-center justify-between">
                 <NavLogo/>
-                <ul className="px-6 py-4 bg-slate-400 text-xl font-medium md:inline-flex gap-x-7 border border-green-300 rounded-full uppercase border-slate-900 ">
+                <ul className="px-6 py-4 bg-slate-400 text-xl font-medium md:inline-flex gap-x-7 border border-green-300 rounded-full uppercase">
                     {
                         navList.map(({title, href}) =>(
-                            <NavListItem key={title} title={title} href={href}/>
+                            <NavListItem key={title} title={title} href={href} onClick={() => setContent(title)}/>
                         ))
                     }
                 </ul>
