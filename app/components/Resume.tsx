@@ -9,7 +9,8 @@ export default function Resume(){
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     return (
-        <div className='flex items-center justify-center max-w-xl m-auto mt-10 p-10  border '>
+        <div className='flex flex-col items-center justify-center max-w-xl m-auto mt-10 p-10 gap-y-7 border '>
+            <h1 className="font-semibold uppercase underline">Resume Page!</h1>
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
                     <Viewer
                         fileUrl="/Resume_CV_Nick.pdf"
