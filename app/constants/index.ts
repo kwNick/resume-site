@@ -24,3 +24,9 @@ export const navList = [
         comp: Links,
     },
 ];
+export const linkList = [
+    {href:"https://www.linkedin.com/in/nick-piraino", link:"linkedIn.com/in/nick-piraino"},
+    {href:"https://www.codewars.com/users/KwNick305", link:"codewars.com/users/KwNick305"},
+    {href:"https://github.com/KwNick", link:"github.com/KwNick"},
+    {href:"https://leetcode.com/404Hero/", link:"leetcode.com/404Hero/"},
+];

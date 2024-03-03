@@ -9,15 +9,15 @@ export default function Resume(){
     const defaultLayoutPluginInstance = defaultLayoutPlugin();
 
     return (
-        <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
-            <div className='flex items-center justify-center max-w-2xl m-auto mt-10 p-10  border '>
-                <Viewer
-                    fileUrl="/Resume_CV_Nick.pdf"
-                    plugins={[
-                        defaultLayoutPluginInstance,
-                    ]}
-                />
-            </div>
-        </Worker>
+        <div className='flex items-center justify-center max-w-xl m-auto mt-10 p-10  border '>
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.js">
+                    <Viewer
+                        fileUrl="/Resume_CV_Nick.pdf"
+                        plugins={[
+                            defaultLayoutPluginInstance,
+                        ]}
+                    />
+            </Worker>
+        </div>
     );
 };
