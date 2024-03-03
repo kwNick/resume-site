@@ -9,7 +9,7 @@ interface Props {
     return (
         <Link href={href} onClick={onClick}>
             <li key={title}className="text-slate-200 hover:text-green-300 duration-200">{title}</li>
-            </Link>
+        </Link>
     );
 }
 export default NavListItem;
