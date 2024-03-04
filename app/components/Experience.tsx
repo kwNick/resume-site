@@ -1,7 +1,7 @@
 import Link from "next/link";
 export default function Experience(){
     return(
-        <div className="m-auto max-w-2xl flex flex-col items-center justify-center mt-10 gap-y-7 p-7 border rounded-xl">
+        <div className="m-auto max-w-2xl flex flex-col items-center justify-center mt-10 gap-y-7 p-7 border  bg-gray-500 text-slate-900 rounded-xl">
             <h1 className="font-semibold underline uppercase">Experience Page!</h1>
             <div className="flex flex-col items-center justify-center text-center gap-y-4 my-7">
                 <h1>Researcher</h1>
