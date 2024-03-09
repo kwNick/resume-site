@@ -11,7 +11,7 @@ interface Props{
 
 export default function NavBar({setContent}: Props){
     return (
-            <div className="h-24 px-10 flex items-center justify-between">
+            <div className="h-24 px-7 flex items-center justify-between">
                 <NavLogo/>
                 <ul className="px-6 py-4 bg-slate-400 text-xl font-medium md:inline-flex gap-x-7 border border-green-300 rounded-xl uppercase">
                     {
