@@ -8,18 +8,18 @@ import Resume from "./Resume";
 import Experience from "./Experience";
 import { useState, useEffect } from "react";
 
-export default function HomePage(){
+export default function HomePage() {
     const [content, setContent] = useState("Resume");
     return (
-        <div className="w-full min-h-screen ">
-            <NavBar setContent={setContent}/>
-            <Content/>
-            {content == "Resume" ? (<Resume/> ) :
-             content == "Publications" ? (<Publications/>) :
-             content == "Experience" ? (<Experience/>):
-             (<Links/>)
-            } 
+        <div className="w-full min-h-screen pt-10">
+            <NavBar setContent={setContent} />
+            <Content />
+            {content == "Resume" ? (<Resume />) :
+                content == "Publications" ? (<Publications />) :
+                    content == "Experience" ? (<Experience />) :
+                        (<Links />)
+            }
         </div>
-        
+
     );
 }
